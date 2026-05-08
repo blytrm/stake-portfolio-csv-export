@@ -114,7 +114,6 @@
         console.log(TAG, 'button injected');
     }
 
-    // Inject the button as soon as <body> exists, then keep it alive across SPA re-renders.
     function start() {
         ensureButton();
         const obs = new MutationObserver(() => ensureButton());
